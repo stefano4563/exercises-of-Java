@@ -1,0 +1,51 @@
+import java.util.Random;
+
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+public class ruota_lotto_Venezia {
+    public static void main(String[] args) {
+
+
+        Random random = new Random();
+        int tiro = random.nextInt(91)+1;
+
+        int tiro2 = random.nextInt(91)+1;
+        while(tiro2==tiro){
+            tiro2 = random.nextInt(91)+1;
+        }
+
+        int tiro3 = random.nextInt(91)+1;
+        while(tiro3==tiro || tiro3==tiro2){
+            tiro3 = random.nextInt(91)+1;
+        }
+        int tiro4 = random.nextInt(91)+1;
+        while(tiro4==tiro || tiro4== tiro2 || tiro4==tiro3){
+            tiro4 = random.nextInt(91)+1;
+        }
+        int tiro5 = random.nextInt(91)+1;
+        while(tiro5==tiro || tiro5==tiro2 || tiro5==tiro3 || tiro5==tiro4){
+            tiro5 = random.nextInt(91)+1;
+        }
+
+        System.out.println("i numeri sono :");
+
+
+
+        int [] numeri = new int[5];
+
+        numeri[0] = tiro;
+        numeri[1] = tiro2;
+        numeri[2] = tiro3;
+        numeri[3] = tiro4;
+        numeri[4] = tiro5;
+
+        System.out.println(numeri[0]);
+        System.out.println(numeri[1]);
+        System.out.println(numeri[2]);
+        System.out.println(numeri[3]);
+        System.out.println(numeri[4]);
+
+    }
+
+
+}
