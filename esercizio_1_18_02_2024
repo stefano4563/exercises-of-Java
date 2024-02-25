@@ -1,0 +1,374 @@
+import java.util.Scanner;
+
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+public class esercizio_1_18_02_2024 {
+    public static void main(String[] args) {
+        /*presentazione*/
+        System.out.println("in questo programma, abbiamo un vettore di 4 stringhe, che puoi scrivere te");
+        String[] contenitore = new String[4];
+        /*dico all'utente di scrivere le stringhe*/
+        Scanner in = new Scanner(System.in);
+        System.out.println("inserisci la prima stringa");
+        String parola1 = in.next();
+        contenitore[0] = parola1;
+
+        System.out.println("inserisci la seconda stringa");
+        String parola2 = in.next();
+        contenitore[1] = parola2;
+
+        System.out.println("inserisci la terza stringa");
+        String parola3 = in.next();
+        contenitore[2] = parola3;
+
+        System.out.println("inserisci la quarta stringa");
+        String parola4 = in.next();
+        contenitore[3] = parola4;
+        /*analizzo le prime lettere delle stringhe*/
+        char A = 0, B = 0, C = 0, D = 0, E = 0, F = 0, G = 0, H = 0, I = 0, J = 0, K = 0, L = 0, M = 0, N = 0, O = 0, P = 0, Q = 0, R = 0, S = 0, T = 0, U = 0, V = 0, W = 0, X = 0, Y = 0, Z = 0;
+
+
+        /*prima stringa*/
+        int i = 0;
+        char lettera = parola1.charAt(i);
+
+
+
+        if (lettera=='A') {
+            System.out.println(parola1);
+        }
+
+        if (lettera=='B') {
+            System.out.println(parola1);
+        }
+
+        if (lettera=='C') {
+            System.out.println(parola1);
+        }
+        if (lettera=='D') {
+            System.out.println(parola1);
+        }
+        if (lettera=='E') {
+            System.out.println(parola1);
+        }
+        if (lettera=='F') {
+            System.out.println(parola1);
+        }
+        if (lettera=='G') {
+            System.out.println(parola1);
+        }
+        if (lettera=='H') {
+            System.out.println(parola1);
+        }
+        if (lettera=='I') {
+            System.out.println(parola1);
+        }
+        if (lettera=='J') {
+            System.out.println(parola1);
+        }
+        if (lettera=='K') {
+            System.out.println(parola1);
+        }
+        if (lettera=='L') {
+            System.out.println(parola1);
+        }if (lettera=='M') {
+            System.out.println(parola1);
+        }
+        if (lettera=='N') {
+            System.out.println(parola1);
+
+        }
+        if (lettera=='O') {
+            System.out.println(parola1);
+        }
+        if (lettera=='P') {
+            System.out.println(parola1);
+        }
+        if (lettera=='Q') {
+            System.out.println(parola1);
+        }
+        if (lettera=='R') {
+            System.out.println(parola1);
+        }
+        if (lettera=='S') {
+            System.out.println(parola1);
+        }
+        if (lettera=='T') {
+            System.out.println(parola1);
+        }
+        if (lettera=='U') {
+            System.out.println(parola1);
+        }
+        if (lettera=='V') {
+            System.out.println(parola1);
+        }
+        if (lettera=='W') {
+            System.out.println(parola1);
+        }
+        if (lettera=='X') {
+            System.out.println(parola1);
+        }
+        if (lettera=='Y') {
+            System.out.println(parola1);
+        }
+        if (lettera=='Z') {
+            System.out.println(parola1);
+        }
+
+        char lettera2 = parola2.charAt(i);
+
+        if (lettera2=='A') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='B') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='C') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='D') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='E') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='F') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='G') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='H') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='I') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='J') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='K') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='L') {
+            System.out.println(parola2);
+        }if (lettera2=='M') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='N') {
+            System.out.println(parola2);
+        }
+
+        if (lettera2=='O') {
+            System.out.println(parola2);
+        }       if (lettera2=='P') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='Q') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='R') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='S') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='T') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='U') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='V') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='W') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='X') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='Y') {
+            System.out.println(parola2);
+        }
+        if (lettera2=='Z') {
+            System.out.println(parola2);
+        }
+
+
+        char lettera3 = parola3.charAt(i);
+
+        if (lettera3=='A') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='B') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='C') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='D') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='E') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='F') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='G') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='H') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='I') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='J') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='K') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='L') {
+            System.out.println(parola3);
+        }if (lettera=='M') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='N') {
+            System.out.println(parola3);
+        }
+
+        if (lettera3=='O') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='P') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='Q') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='R') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='S') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='T') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='U') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='V') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='W') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='X') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='Y') {
+            System.out.println(parola3);
+        }
+        if (lettera3=='Z') {
+            System.out.println(parola3);
+        }
+
+
+
+        char lettera4 = parola4.charAt(i);
+
+        if (lettera4=='A') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='B') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='C') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='D') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='E') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='F') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='G') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='H') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='I') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='J') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='K') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='L') {
+            System.out.println(parola4);
+        }if (lettera4=='M') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='N') {
+            System.out.println(parola4);
+        }
+
+        if (lettera4=='O') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='P') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='Q') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='R') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='S') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='T') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='U') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='V') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='W') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='X') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='Y') {
+            System.out.println(parola4);
+        }
+        if (lettera4=='Z') {
+            System.out.println(parola4);
+        }
+
+
+
+
+
+
+
+
+
+
+
+    }
+    }
