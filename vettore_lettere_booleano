@@ -1,0 +1,33 @@
+import java.lang.reflect.Array;
+import java.util.Scanner;
+
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+public class vettore_lettere_booleano {
+    public static void main(String[] args) {
+        Scanner in = new Scanner (System.in);
+       System.out.println("scrivi la parola");
+       String parola = in.next();
+        String input = parola;
+
+        boolean[] vector = new boolean[26];
+
+
+
+        char[] chars = input.toCharArray();
+
+        for (char c : chars) {
+
+            int index;
+            if (Character.isUpperCase(c)) {
+
+                index = c - 'A';
+            } else {
+
+                index = c - 'a';
+            }
+
+            vector[index] = true;
+        }
+
+        for (int i = 0; i < vector.length; i++) {
