@@ -1,0 +1,141 @@
+import java.util.Random;
+import java.util.Scanner;
+
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+public class gioco_dadi {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        Random random = new Random();
+
+        int lancio = random.nextInt(6) + 1;
+        int lancio2 = random.nextInt(6) + 1;
+        int vincita;
+
+        System.out.println("inizio del primo giocatore: lancio del dado");
+
+
+
+        switch (lancio) {
+            case 1: {
+                System.out.println("\t\t\t\t ╔═════════╗");
+                System.out.println("\t\t\t\t ║         ║");
+                System.out.println("\t\t\t\t ║    O    ║");
+                System.out.println("\t\t\t\t ║         ║");
+                System.out.println("\t\t\t\t ╚═════════╝");
+                break;
+            }
+
+            case 2: {
+                System.out.println("\t\t\t\t ╔═════════╗");
+                System.out.println("\t\t\t\t ║  O      ║");
+                System.out.println("\t\t\t\t ║         ║");
+                System.out.println("\t\t\t\t ║      O  ║");
+                System.out.println("\t\t\t\t ╚═════════╝");
+                break;
+            }
+
+            case 3: {
+                System.out.println("\t\t\t\t ╔═════════╗");
+                System.out.println("\t\t\t\t ║  O      ║");
+                System.out.println("\t\t\t\t ║    O    ║");
+                System.out.println("\t\t\t\t ║      O  ║");
+                System.out.println("\t\t\t\t ╚═════════╝");
+                break;
+            }
+
+            case 4: {
+                System.out.println("\t\t\t\t ╔═════════╗");
+                System.out.println("\t\t\t\t ║  O   O  ║");
+                System.out.println("\t\t\t\t ║         ║");
+                System.out.println("\t\t\t\t ║  O   O  ║");
+                System.out.println("\t\t\t\t ╚═════════╝");
+                break;
+            }
+
+            case 5: {
+                System.out.println("\t\t\t\t ╔═════════╗");
+                System.out.println("\t\t\t\t ║  O   O  ║");
+                System.out.println("\t\t\t\t ║    O    ║");
+                System.out.println("\t\t\t\t ║  O   O  ║");
+                System.out.println("\t\t\t\t ╚═════════╝");
+                break;
+            }
+
+            case 6: {
+                System.out.println("\t\t\t\t ╔═════════╗");
+                System.out.println("\t\t\t\t ║  O   O  ║");
+                System.out.println("\t\t\t\t ║  O   O  ║");
+                System.out.println("\t\t\t\t ║  O   O  ║");
+                System.out.println("\t\t\t\t ╚═════════╝");
+                break;
+            }
+        }
+
+            System.out.println("inizio del secondo giocatore: lancio del dado");
+
+            switch (lancio2) {
+                case 1: {
+                    System.out.println("\t\t\t\t ╔═════════╗");
+                    System.out.println("\t\t\t\t ║         ║");
+                    System.out.println("\t\t\t\t ║    O    ║");
+                    System.out.println("\t\t\t\t ║         ║");
+                    System.out.println("\t\t\t\t ╚═════════╝");
+                    break;
+                }
+
+                case 2: {
+                    System.out.println("\t\t\t\t ╔═════════╗");
+                    System.out.println("\t\t\t\t ║  O      ║");
+                    System.out.println("\t\t\t\t ║         ║");
+                    System.out.println("\t\t\t\t ║      O  ║");
+                    System.out.println("\t\t\t\t ╚═════════╝");
+                    break;
+                }
+
+                case 3: {
+                    System.out.println("\t\t\t\t ╔═════════╗");
+                    System.out.println("\t\t\t\t ║  O      ║");
+                    System.out.println("\t\t\t\t ║    O    ║");
+                    System.out.println("\t\t\t\t ║      O  ║");
+                    System.out.println("\t\t\t\t ╚═════════╝");
+                    break;
+                }
+
+                case 4: {
+                    System.out.println("\t\t\t\t ╔═════════╗");
+                    System.out.println("\t\t\t\t ║  O   O  ║");
+                    System.out.println("\t\t\t\t ║         ║");
+                    System.out.println("\t\t\t\t ║  O   O  ║");
+                    System.out.println("\t\t\t\t ╚═════════╝");
+                    break;
+                }
+
+                case 5: {
+                    System.out.println("\t\t\t\t ╔═════════╗");
+                    System.out.println("\t\t\t\t ║  O   O  ║");
+                    System.out.println("\t\t\t\t ║    O    ║");
+                    System.out.println("\t\t\t\t ║  O   O  ║");
+                    System.out.println("\t\t\t\t ╚═════════╝");
+                    break;
+                }
+
+                case 6: {
+                    System.out.println("\t\t\t\t ╔═════════╗");
+                    System.out.println("\t\t\t\t ║  O   O  ║");
+                    System.out.println("\t\t\t\t ║  O   O  ║");
+                    System.out.println("\t\t\t\t ║  O   O  ║");
+                    System.out.println("\t\t\t\t ╚═════════╝");
+                    break;
+                }
+
+                            }
+                if (lancio>lancio2){
+                    System.out.println("vincita del giocatore 1");
+                }
+                else {
+                    System.out.println("vincita del giocatore 2");
+                }
+
+        }
+    }
