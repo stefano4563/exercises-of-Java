@@ -1,0 +1,46 @@
+public class Main {
+    public static void main(String[] args) {
+
+
+        boolean[] presenti = new boolean[26];
+        String verifica = "";
+        String frase = "la mamma di pierino";
+
+        Vett(presenti, frase);
+
+        stampa(presenti);
+
+     stampa1(frase);
+
+     System.out.println("la mamma di pierino");
+    }
+
+    private static void Vett(boolean[] presenti, String frase) {
+        for (int i = 0; i < frase.length(); i++) {
+            if (frase.charAt(i) >= 'a' && frase.charAt(i) <= 'z') {
+                presenti[frase.charAt(i) - 'a'] = true;
+            }
+        }
+    }
+
+    private static void stampa(boolean[] presenti) {
+        for (int i = 0; i < presenti.length; i++) {
+            if (presenti[i]) {
+                //char car= (char) (i + 'a');
+
+                System.out.println((char) (i + 'a'));
+
+
+            }
+        }
+    }
+    public static void stampa1(String frase) {
+        String str = frase;
+        for(int i=0; i<=str.length()-1; i++) {
+            System.out.println(str.charAt(i));
+
+        }
+    }
+
+
+            }
