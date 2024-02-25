@@ -1,0 +1,66 @@
+import java.util.Random;
+import java.util.Scanner;
+//il programma svolge 100 lancio per ogni faccia, e annota quante volte è comparsa una data faccia in 100 lanci
+public class Statistica_modificato {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+//dichiaro ed inizializzo le facce del dado: 6 facce in totale
+int faccia1 = 0;
+int faccia2 = 0;
+int faccia3 = 0;
+int faccia4 = 0;
+int faccia5 = 0;
+int faccia6 = 0;
+
+        int [] frequenze  = new int[6];
+
+
+//variabile per l'utilizzo del ciclo for
+
+for( int lancio=1; lancio<=1; lancio++){
+
+    //creo comando random
+    Random random = new Random();
+    //posiziono il comando random "lancio2"
+   int  lancio2 = random.nextInt(7);
+    switch (lancio2) {
+        case 1: {
+            frequenze[0]++;
+        }
+        case 2: {
+            frequenze[1]++;
+        }
+        case 3: {
+            frequenze[2]++;
+        }
+        case 4: {
+            frequenze[3]++;
+        }
+        case 5: {
+            frequenze[4]++;
+        }
+        case 6: {
+            frequenze[5]++;
+        }
+
+    }
+        }
+        int[] vettore1 = new int[6];
+        vettore1[0]= faccia1;
+        vettore1[1]= faccia2;
+        vettore1[2]= faccia3;
+        vettore1[3]= faccia4;
+        vettore1[4]= faccia5;
+        vettore1[5]= faccia6;
+
+
+
+        System.out.println("la faccia1 compare= "+ frequenze[0]);
+        System.out.println("la faccia2 compare= "+ frequenze[1]);
+        System.out.println("la faccia3 compare= "+ frequenze[2]);
+        System.out.println("la faccia4 compare= "+ frequenze[3]);
+        System.out.println("la faccia5 compare= "+ frequenze[4]);
+        System.out.println("la faccia6 compare= "+ frequenze[5]);
+            }
+        }
