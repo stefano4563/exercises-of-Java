@@ -1,0 +1,155 @@
+import java.util.Random;
+import java.util.Scanner;
+public class esercizio_estrazioni_lotto{
+    public static void main(String[] args) {
+        Scanner tastiera = new Scanner(System.in);
+        int scelta=0;
+        String [] opzioni = {"=== Gioco Dadi === ",
+                "[1] Estrazioni ruota di Venezia",
+                "[2] Giocata utente",
+                "[3] Verifica vincita",
+                "[4] Visualizza giocate"};
+
+        /* Giocata utente: l'utente punta 5 numeri sulla ruota di Venezia
+         * lista spesa: array di 5 elementi
+         * controllo se valori inseriti sono compresi tra 1 e 90
+         * controllo che un numero venga inserito una sola volta
+         * controllo che vengano inseriti 5 valori, non di più non di meno
+         * Visualizza giocate: lista della spesa
+         * menu di scelta, opzioni2 (Venezia, Giocatore)*/
+
+        System.out.println(Menu(opzioni, tastiera));
+        Wait(5000);
+
+    }
+
+    private static int Menu (String opzioni[], Scanner tastiera) {
+        int scelta;
+
+        do {
+            ClrScr();
+            System.out.println("------------------");
+            System.out.println(opzioni[0]);
+            System.out.println("------------------");
+            for (int i = 1; i < opzioni.length; i++) {
+                System.out.println(opzioni[i]);
+            }
+            scelta = tastiera.nextInt();
+
+            if ((scelta < 1) || (scelta > opzioni.length - 1)) {
+                System.out.println("Opzione Sbagliata");
+                Wait(2000);
+            }
+        }
+        while ((scelta < 1) || (scelta > opzioni.length - 1));
+        while (scelta>0 || scelta<5) {
+            if(scelta==1) {
+                System.out.println("estrazioni ruota di Venezia, i tuoi numeri sono:");
+                Random random = new Random();
+                int estrazioni1 = random.nextInt(91) + 1;
+                int estrazioni2 = random.nextInt(91) + 1;
+                if (estrazioni2 != estrazioni1) {
+                    estrazioni2 = random.nextInt(91) + 1;
+                }
+                int estrazioni3 = random.nextInt(91) + 1;
+                if (estrazioni3 != estrazioni1 || estrazioni3 != estrazioni2) {
+                    estrazioni3 = random.nextInt(91) + 1;
+                }
+                int estrazioni4 = random.nextInt(91) + 1;
+                if (estrazioni3 != estrazioni1 || estrazioni4 != estrazioni2 || estrazioni4 != estrazioni3) {
+                    estrazioni4 = random.nextInt(91) + 1;
+                }
+                int estrazioni5 = random.nextInt(91) + 1;
+                if (estrazioni5 != estrazioni1 || estrazioni5 != estrazioni2 || estrazioni5 != estrazioni3 || estrazioni5 != estrazioni4) {
+                    estrazioni5 = random.nextInt(91) + 1;
+                }
+                System.out.println("" + estrazioni1);
+                System.out.println("" + estrazioni2);
+                System.out.println("" + estrazioni3);
+                System.out.println("" + estrazioni4);
+                System.out.println("" + estrazioni5);
+                System.out.println("per parteciare all'estrazione, prema 2");
+                Scanner in = new Scanner(System.in);
+                scelta = in.nextInt();
+
+
+                System.out.println("estrazione dei numeri");
+                int numeri1 = random.nextInt(91) + 1;
+                int numeri2 = random.nextInt(91) + 1;
+                if (numeri2 != numeri1) {
+                    numeri2 = random.nextInt(91) + 1;
+                }
+                int numeri3 = random.nextInt(91) + 1;
+                if (numeri3 != numeri1 || numeri3 != numeri2) {
+                    numeri3 = random.nextInt(91) + 1;
+                }
+                int numeri4 = random.nextInt(91) + 1;
+                if (numeri4 != numeri1 || numeri4 != numeri2 || numeri4 != numeri3) {
+                    numeri4 = random.nextInt(91) + 1;
+                }
+                int numeri5 = random.nextInt(91) + 1;
+                if (numeri5 != numeri1 || numeri5 != numeri2 || numeri5 != numeri3 || numeri5 != numeri4) {
+                    numeri5 = random.nextInt(91) + 1;
+                }
+
+
+                System.out.println("" + numeri1);
+                System.out.println("" + numeri2);
+                System.out.println("" + numeri3);
+                System.out.println("" + numeri4);
+                System.out.println("" + numeri5);
+                System.out.println("prema 3 per poter verificare di aver vinto");
+                scelta = in.nextInt();
+
+                if (estrazioni1 == numeri1 || estrazioni1 == numeri2 || estrazioni1 == numeri3 || estrazioni1 == numeri4 || estrazioni1 == numeri5) {
+                    System.out.println("numero verificato e corretto");
+                }
+                else{
+                    System.out.println("numero non corrispondente");
+                }
+                if (estrazioni2 == numeri1 || estrazioni2 == numeri2 || estrazioni2 == numeri3 || estrazioni2 == numeri4 || estrazioni2 == numeri5) {
+                    System.out.println("numero verificato e corretto");
+                } else {
+                    System.out.println("numero non corrispondente");
+                }
+                if (estrazioni3 == numeri1 || estrazioni3 == numeri2 || estrazioni3 == numeri3 || estrazioni3 == numeri4 || estrazioni3 == numeri5) {
+                    System.out.println("numero verificato e corretto");
+                } else {
+                    System.out.println("numero non corrispondente");
+                }
+                if (estrazioni4 == numeri1 || estrazioni4 == numeri2 || estrazioni4 == numeri3 || estrazioni4 == numeri4 || estrazioni4 == numeri5) {
+                    System.out.println("numero verificato e corretto");
+                } else {
+                    System.out.println("numero non corrispondente");
+                }
+                if (estrazioni5 == numeri1 || estrazioni5 == numeri2 || estrazioni5 == numeri3 || estrazioni5 == numeri4 || estrazioni5 == numeri5) {
+                    System.out.println("numero verificato e corretto");
+                } else {
+                    System.out.println("numero non corrispondente");
+                }
+            }
+
+            }
+
+
+
+return scelta;
+    }
+
+    private static void ClrScr(){
+        try {
+            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static void Wait(int attesa) {
+        try{
+            Thread.sleep(attesa);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+}
