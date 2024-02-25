@@ -1,0 +1,67 @@
+import java.util.Scanner;
+
+
+public class Vinaio2 {
+
+
+    // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        double imponibile;
+        float iva;
+        double totale;
+        int numero;
+        int lugana, merlot, barbera;
+        lugana = 1;
+        merlot = 2;
+        barbera = 3;
+        double bottiglioni;
+        bottiglioni = 1.5;
+        System.out.println("Salve, inserire numero 1 per selezionare vino Lugana, 2 per selezionare vino Merlot, 3 per selezionare vino barbera");
+        numero = in.nextInt();
+        while (numero > 0) {
+            if (numero == lugana) {
+                System.out.println("Hai scelto Lugana, quanti bottiglioni vuoi?");
+                bottiglioni = in.nextInt();
+                imponibile = (bottiglioni * 1.5)*2;
+                System.out.println("imponibile = € " + imponibile);
+                iva = (float) ((imponibile * 21) / 100);
+                System.out.println("iva € =" + iva);
+                totale = imponibile + iva;
+                System.out.println("Il totale acquistato risulta essere= ");
+                System.out.printf("%.2f € ", totale);
+
+            }
+            if (numero == merlot) {
+                System.out.println("Hai scelto Merlot, quanti bottiglioni vuoi?");
+                bottiglioni = in.nextInt();
+                imponibile = (bottiglioni * 1.5)*1;
+                System.out.println("imponibile = € " + imponibile);
+                iva = (float) ((imponibile * 21) / 100);
+                System.out.println("iva € =" + iva);
+                totale = imponibile + iva;
+                System.out.println("Il totale acquistato risulta essere= ");
+                System.out.printf("%.2f € ", totale);
+            }
+            if (numero == barbera) {
+                System.out.println("Hai scelto Barbera, quanti bottiglioni vuoi?");
+                bottiglioni = in.nextInt();
+                imponibile = (bottiglioni * 1.5)*1.5;
+                System.out.println("imponibile = €  " + imponibile);
+                iva = (float) ((imponibile * 21) / 100);
+                System.out.println("iva € =" + iva);
+                totale = (imponibile + iva);
+                System.out.println("Il totale acquistato risulta essere= ");
+                System.out.printf("%.2f € ", totale);
+            }
+            System.out.println("stampa dello scontrino");
+            System.out.println(" nuovo cliente, ripetere operazioni  inserire 9, altrimenti 0 per chiudere cassa");
+            numero = in.nextInt();
+            if (numero > 0) {
+                System.out.println("inserisci numero 1 per selezionare vino lugana, 2 per merlot, 3 per barbera");
+                numero = in.nextInt();
+            }
+        }
+    }
+}
