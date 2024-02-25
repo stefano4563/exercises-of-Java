@@ -1,0 +1,102 @@
+import java.util.Scanner;
+
+public class Morra_cinese {
+    public static void main (String[] args){
+        Scanner gioco=new Scanner(System.in);
+
+        //dichiarazione e inizializzazione delle variabili
+        char giocatore1;
+        char giocatore2;
+
+        do{
+            //Prendo in input il valore del giocatore 1
+            System.out.println("Inserisci un elemento: (A=carta, S=sasso, D=forbici e X=STOP)  ");
+            giocatore1=gioco.next().charAt(0);
+
+            try {
+                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            //se i valori non sono validi
+            //giocatore 1
+            if(giocatore1!='A' && giocatore1!='S' && giocatore1!='D' && giocatore1!='X'){
+                do{
+                    System.out.println("VALORI NON VALIDI");
+                    System.out.println("Inserisci un elemento: (A=carta, S=sasso, D=forbici e X=STOP");
+                    giocatore1=gioco.next().charAt(0);
+                }while (giocatore1!='A' && giocatore1!='S' && giocatore1!='D' && giocatore1!='X');
+            }
+
+            //Prendo in input il valore del giocatore 1
+            System.out.println("Inserisci un elemento: (J=carta, K=sasso e L=forbici)  ");
+            giocatore2=gioco.next().charAt(0);
+
+            //giocatore 2
+            if(giocatore2!='J' && giocatore2!='K' && giocatore2!='L' && giocatore2!='X'){
+                do {
+                    System.out.println("VALORI NON VALIDI");
+                    System.out.println("Inserisci un elemento: (J=carta, K=sasso, L=forbici e X=STOP)  ");
+                    giocatore2=gioco.next().charAt(0);
+                }while(giocatore2!='J' && giocatore2!='K' && giocatore2!='L' && giocatore2!='X');
+            }
+
+
+            //PARITA'
+            if(giocatore1=='A' && giocatore2=='J'){
+                System.out.println("PARITA'");
+            }
+            if(giocatore1=='S' && giocatore2=='K'){
+                System.out.println("PARITA'");
+            }
+            if(giocatore1=='D' && giocatore2=='L'){
+                System.out.println("PARITA'");
+            }
+
+
+            //giocatore 1=S e giocatore 2=J
+            if(giocatore1=='S' && giocatore2=='J'){
+                System.out.println("HA VINTO IL GIOCATORE 1");
+            }
+
+            //giocatore 1=D e giocatore 2=J
+            if (giocatore1=='S' && giocatore2=='J'){
+                System.out.println("HA VINTO IL GIOCATORE 2");
+            }
+
+            //giocatore 1=D e giocatore 2=J
+            if (giocatore1=='D' && giocatore2=='J'){
+                System.out.println("HA VINTO IL GIOCATORE 1");
+            }
+
+            //giocatore 1=A e giocatore 2=K
+            if (giocatore1=='A' && giocatore2=='K'){
+                System.out.println("HA VINTO IL GIOCATORE 1");
+            }
+
+            //giocatore 1=D e giocatore 2=K
+            if (giocatore1=='D' && giocatore2=='K'){
+                System.out.println("HA VINTO IL GIOCATORE 2");
+            }
+
+            //giocatore 1=A e giocatore 2=L
+            if (giocatore1=='A' && giocatore2=='L'){
+                System.out.println("HA VINTO IL GIOCATORE 2");
+            }
+
+            //giocatore 1=S e giocatore 2=L
+            if (giocatore1=='S' && giocatore2=='L'){
+                System.out.println("HA VINTO IL GIOCATORE 1");
+            }
+
+            if (giocatore1=='X' || giocatore2=='X'){
+                System.out.println("STOP");
+            }
+        }while(giocatore1!='X' && giocatore2!='X');
+
+
+
+
+    }
+}
