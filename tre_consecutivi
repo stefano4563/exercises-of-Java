@@ -1,0 +1,88 @@
+import java.util.Random;
+
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+public class tre_consecutivi {
+    public static void main(String[] args) {
+        /*dichiaro vettore*/
+  int [] vettore = new int[10];
+/*creo una funzione random per creare i 10 numeri casuali*/
+
+
+        System.out.println("numeri");
+        Random random1= new Random();
+
+        Random random2= new Random();
+        Random random3= new Random();
+        Random random4= new Random();
+        Random random5= new Random();
+        Random random6= new Random();
+        Random random7= new Random();
+        Random random8= new Random();
+        Random random9= new Random();
+        Random random10= new Random();
+
+
+
+        vettore[0]= random1.nextInt(6);
+        vettore[1]= random2.nextInt(6);
+        vettore[2]= random3.nextInt(6);
+        vettore[3]= random4.nextInt(6);
+        vettore[4]= random5.nextInt(6);
+        vettore[5]= random6.nextInt(6);
+        vettore[6]= random7.nextInt(6);
+        vettore[7]= random8.nextInt(6);
+        vettore[8]= random9.nextInt(6);
+        vettore[9]= random10.nextInt(6);
+
+
+        System.out.println(""+vettore[1]);
+        System.out.println(""+vettore[2]);
+        System.out.println(""+vettore[3]);
+        System.out.println(""+vettore[4]);
+        System.out.println(""+vettore[5]);
+        System.out.println(""+vettore[6]);
+        System.out.println(""+vettore[7]);
+        System.out.println(""+vettore[8]);
+        System.out.println(""+vettore[9]);
+
+      if (vettore[2]==vettore[1] && vettore[2]==vettore[3]) {
+          System.out.println("tre consecutivi");
+      }
+      if (vettore[3]==vettore[2] && vettore[3]==vettore[4]){
+          System.out.println("tre consecutivi");
+      }
+      if (vettore[4]==vettore[3] && vettore[4]==vettore[5]){
+          System.out.println("tre consecutivi");
+      }
+      if(vettore[5]==vettore[4] && vettore[5]==vettore[6]){
+          System.out.println("tre consecutivi");
+      }
+      if(vettore[6]==vettore[5] && vettore[6]==vettore[7]){
+              System.out.println("tre consecutivi");
+        }
+      if(vettore[7]==vettore[6] && vettore[7]==vettore[8]){
+          System.out.println("tre consecutivi");
+      }
+      if(vettore[8]==vettore[7] && vettore[8]==vettore[9]){
+          System.out.println("tre consecutivi");
+      }
+
+      else{
+          System.out.println("NO");
+      }
+
+
+
+
+
+
+
+            }
+
+
+
+        }
+
+
+
